@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0570802AD98D310072924A /* AddClassmateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC05707F2AD98D310072924A /* AddClassmateViewController.swift */; };
 		CC9A1C762AD6E44E00186677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1C752AD6E44E00186677 /* AppDelegate.swift */; };
 		CC9A1C782AD6E44E00186677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1C772AD6E44E00186677 /* SceneDelegate.swift */; };
 		CC9A1C7A2AD6E44E00186677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1C792AD6E44E00186677 /* ViewController.swift */; };
@@ -18,6 +19,8 @@
 		CC9A1C9A2AD6E45000186677 /* ClassmateAppRichmondUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1C992AD6E45000186677 /* ClassmateAppRichmondUITests.swift */; };
 		CC9A1C9C2AD6E45000186677 /* ClassmateAppRichmondUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1C9B2AD6E45000186677 /* ClassmateAppRichmondUITestsLaunchTests.swift */; };
 		CC9A1CA92AD6E46700186677 /* classmate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1CA82AD6E46700186677 /* classmate.swift */; };
+		CC9A1CAB2AD6E5D000186677 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1CAA2AD6E5D000186677 /* QuizViewController.swift */; };
+		CC9A1CAD2AD6E5F200186677 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9A1CAC2AD6E5F200186677 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC05707F2AD98D310072924A /* AddClassmateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClassmateViewController.swift; sourceTree = "<group>"; };
 		CC9A1C722AD6E44E00186677 /* ClassmateAppRichmond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassmateAppRichmond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC9A1C752AD6E44E00186677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC9A1C772AD6E44E00186677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		CC9A1C992AD6E45000186677 /* ClassmateAppRichmondUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassmateAppRichmondUITests.swift; sourceTree = "<group>"; };
 		CC9A1C9B2AD6E45000186677 /* ClassmateAppRichmondUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassmateAppRichmondUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC9A1CA82AD6E46700186677 /* classmate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmate.swift; sourceTree = "<group>"; };
+		CC9A1CAA2AD6E5D000186677 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CC9A1CAC2AD6E5F200186677 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		CC9A1C692AD6E44E00186677 = {
 			isa = PBXGroup;
 			children = (
+				CC05707F2AD98D310072924A /* AddClassmateViewController.swift */,
 				CC9A1C742AD6E44E00186677 /* ClassmateAppRichmond */,
 				CC9A1C8E2AD6E45000186677 /* ClassmateAppRichmondTests */,
 				CC9A1C982AD6E45000186677 /* ClassmateAppRichmondUITests */,
@@ -107,6 +114,8 @@
 				CC9A1C772AD6E44E00186677 /* SceneDelegate.swift */,
 				CC9A1C792AD6E44E00186677 /* ViewController.swift */,
 				CC9A1C7B2AD6E44E00186677 /* Main.storyboard */,
+				CC9A1CAA2AD6E5D000186677 /* QuizViewController.swift */,
+				CC9A1CAC2AD6E5F200186677 /* InfoViewController.swift */,
 				CC9A1CA82AD6E46700186677 /* classmate.swift */,
 				CC9A1C812AD6E45000186677 /* Assets.xcassets */,
 				CC9A1C832AD6E45000186677 /* LaunchScreen.storyboard */,
@@ -213,7 +222,7 @@
 				};
 			};
 			buildConfigurationList = CC9A1C6D2AD6E44E00186677 /* Build configuration list for PBXProject "ClassmateAppRichmond" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -264,9 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0570802AD98D310072924A /* AddClassmateViewController.swift in Sources */,
 				CC9A1C7A2AD6E44E00186677 /* ViewController.swift in Sources */,
 				CC9A1C802AD6E44E00186677 /* ClassmateAppRichmond.xcdatamodeld in Sources */,
 				CC9A1C762AD6E44E00186677 /* AppDelegate.swift in Sources */,
+				CC9A1CAD2AD6E5F200186677 /* InfoViewController.swift in Sources */,
+				CC9A1CAB2AD6E5D000186677 /* QuizViewController.swift in Sources */,
 				CC9A1C782AD6E44E00186677 /* SceneDelegate.swift in Sources */,
 				CC9A1CA92AD6E46700186677 /* classmate.swift in Sources */,
 			);
