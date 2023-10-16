@@ -25,6 +25,10 @@ class InfoViewController: UIViewController {
         displayClassmateInfo()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        delegate!.classmates = classmates
+    }
+    
     func displayClassmateInfo() {
         let name: String = classmates[targetIndex].name
         let age: Int = classmates[targetIndex].age
@@ -43,6 +47,12 @@ class InfoViewController: UIViewController {
             targetIndex -= 1
         }
         
+        displayClassmateInfo()
+    }
+    
+    @IBAction func sort_action(_ sender: UIButton) {
+        classmates = classmates.sorted(by: { $0.age < $1.age})
+        targetIndex = 0
         displayClassmateInfo()
     }
     

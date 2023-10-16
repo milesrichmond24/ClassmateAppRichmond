@@ -89,7 +89,6 @@
 		CC9A1C692AD6E44E00186677 = {
 			isa = PBXGroup;
 			children = (
-				CC05707F2AD98D310072924A /* AddClassmateViewController.swift */,
 				CC9A1C742AD6E44E00186677 /* ClassmateAppRichmond */,
 				CC9A1C8E2AD6E45000186677 /* ClassmateAppRichmondTests */,
 				CC9A1C982AD6E45000186677 /* ClassmateAppRichmondUITests */,
@@ -114,6 +113,7 @@
 				CC9A1C772AD6E44E00186677 /* SceneDelegate.swift */,
 				CC9A1C792AD6E44E00186677 /* ViewController.swift */,
 				CC9A1C7B2AD6E44E00186677 /* Main.storyboard */,
+				CC05707F2AD98D310072924A /* AddClassmateViewController.swift */,
 				CC9A1CAA2AD6E5D000186677 /* QuizViewController.swift */,
 				CC9A1CAC2AD6E5F200186677 /* InfoViewController.swift */,
 				CC9A1CA82AD6E46700186677 /* classmate.swift */,
