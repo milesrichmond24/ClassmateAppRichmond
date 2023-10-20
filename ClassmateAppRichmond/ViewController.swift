@@ -15,17 +15,9 @@ class ViewController: UIViewController {
         
         classmates.append(Classmate(name: "Beef", age: 17, uID: 3992))
         classmates.append(Classmate(name: "Pork", age: 18, uID: 2674))
-        
-        print(classmates[0].name)
-        
-                          
-        
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
         switch segue.identifier {
         case "toInfo":
             let nextViewController = segue.destination as! InfoViewController
@@ -35,6 +27,9 @@ class ViewController: UIViewController {
             let nextViewController = segue.destination as! QuizViewController
             nextViewController.delegate = self
             nextViewController.classmates = self.classmates
+        case "toInfoTable":
+            let nextViewController = segue.destination as! InfoTableViewController
+            nextViewController.delegate = self
         default:
             return;
         }
@@ -48,5 +43,9 @@ class ViewController: UIViewController {
     
     @IBAction func moveToInfo_action(_ sender: UIButton) {
         performSegue(withIdentifier: "toInfo", sender: self)
+    }
+    
+    @IBAction func moveToInfoTable_action(_ sender: UIButton) {
+        performSegue(withIdentifier: "toInfoTable", sender: self)
     }
 }

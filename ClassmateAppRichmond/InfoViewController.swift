@@ -51,7 +51,7 @@ class InfoViewController: UIViewController {
     }
     
     @IBAction func sort_action(_ sender: UIButton) {
-        classmates = classmates.sorted(by: { $0.age < $1.age})
+        classmates = classmates.sorted(by: { $0.age < $1.age })
         targetIndex = 0
         displayClassmateInfo()
     }
