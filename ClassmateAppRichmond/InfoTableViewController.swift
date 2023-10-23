@@ -30,17 +30,19 @@ class InfoTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return classmates.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "classmate", for: indexPath) as! ClassmateCell
+        let addCell = tableView.dequeueReusableCell(withIdentifier: "add", for: indexPath)
+        print(cell is ClassmateCell)
 
         // Configure the cell...
         
@@ -97,4 +99,13 @@ class InfoTableViewController: UITableViewController {
     }
     */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextViewController = segue.destination as! AddClassmateViewController
+        nextViewController.delegate2 = self
+        
+    }
+    
+    @IBAction func add_action(_ sender: UIButton) {
+        performSegue(withIdentifier: "add", sender: self)
+    }
 }

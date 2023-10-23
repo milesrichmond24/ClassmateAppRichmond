@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         case "toInfoTable":
             let nextViewController = segue.destination as! InfoTableViewController
             nextViewController.delegate = self
+            nextViewController.classmates = self.classmates
         default:
             return;
         }

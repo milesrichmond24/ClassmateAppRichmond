@@ -72,6 +72,6 @@ class InfoViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextViewController = segue.destination as! AddClassmateViewController
-        nextViewController.delegate = self
+        nextViewController.delegate1 = self
     }
 }

@@ -10,7 +10,8 @@ import UIKit
 class AddClassmateViewController: UIViewController {
 
     
-    weak var delegate: InfoViewController!
+    weak var delegate1: InfoViewController!
+    weak var delegate2: InfoTableViewController!
     
     
     @IBOutlet weak var response_label: UILabel!
@@ -46,7 +47,12 @@ class AddClassmateViewController: UIViewController {
         
         response_label.text = "Add Successful"
         
-        delegate.classmates.append(Classmate(name: name!, age: age, uID: uID))
+        if delegate1 == nil {
+            delegate2.classmates.append(Classmate(name: name!, age: age, uID: uID))
+        } else {
+            delegate1.classmates.append(Classmate(name: name!, age: age, uID: uID))
+        }
+        
         clearInput()
     }
     
