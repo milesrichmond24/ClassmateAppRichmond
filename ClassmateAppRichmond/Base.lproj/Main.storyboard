@@ -220,10 +220,10 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOV-tj-rac">
-                                            <rect key="frame" x="137" y="4" width="120" height="35"/>
+                                            <rect key="frame" x="105" y="4" width="185" height="35"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="gray" title="Add Student"/>
+                                            <buttonConfiguration key="configuration" style="gray" title="Add/Remove Student"/>
                                             <connections>
                                                 <action selector="add_action:" destination="Jgu-bR-wwM" eventType="touchUpInside" id="Ukb-3n-Rmv"/>
                                             </connections>
@@ -309,7 +309,7 @@
                                                 <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="168.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add/Remove"/>
                                                 <connections>
                                                     <action selector="add_action:" destination="3eD-s2-J7y" eventType="touchUpInside" id="U2T-d4-OCC"/>
                                                 </connections>
@@ -400,13 +400,22 @@
                                         <rect key="frame" x="0.0" y="379" width="393" height="168.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpm-dN-u6v">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="168.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="168.33333333333334"/>
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                                 <connections>
                                                     <action selector="add_action:" destination="DWV-mk-Ed0" eventType="touchUpInside" id="8uW-6I-s4M"/>
                                                     <action selector="add_action:" destination="3eD-s2-J7y" eventType="touchUpInside" id="rVb-Dw-6jo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhd-SS-iV7">
+                                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="168.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Remove"/>
+                                                <connections>
+                                                    <action selector="remove_action:" destination="DWV-mk-Ed0" eventType="touchUpInside" id="6Mg-CE-tdY"/>
                                                 </connections>
                                             </button>
                                         </subviews>

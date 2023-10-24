@@ -11,7 +11,7 @@ class InfoTableViewController: UITableViewController {
     
     var classmates: [Classmate] = []
     var delegate: ViewController!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,8 +22,8 @@ class InfoTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        classmates = delegate.classmates
+    override func viewWillDisappear(_ animated: Bool) {
+        delegate.classmates = self.classmates
     }
 
     // MARK: - Table view data source
@@ -35,15 +35,18 @@ class InfoTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return classmates.count
+        return classmates.count + 1
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "classmate", for: indexPath) as! ClassmateCell
         let addCell = tableView.dequeueReusableCell(withIdentifier: "add", for: indexPath)
-        print(cell is ClassmateCell)
-
+        
+        if(indexPath.row == classmates.count) {
+            return addCell
+        }
+        
         // Configure the cell...
         
         cell.name_label.text = classmates[indexPath.row].name
@@ -102,6 +105,7 @@ class InfoTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let nextViewController = segue.destination as! AddClassmateViewController
         nextViewController.delegate2 = self
+        nextViewController.classmates = self.classmates
         
     }
     
