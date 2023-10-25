@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="314"/>
+            <point key="canvasLocation" x="-613" y="315"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="74P-f3-AK2">
@@ -240,11 +240,12 @@
                     <navigationItem key="navigationItem" id="pfO-Kq-roi"/>
                     <connections>
                         <segue destination="DWV-mk-Ed0" kind="show" identifier="add" id="l9l-KP-T0W"/>
+                        <segue destination="3eD-s2-J7y" kind="show" identifier="viewClassmate" id="76a-33-Lsk"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjy-4o-fuD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="1400"/>
+            <point key="canvasLocation" x="-25" y="1139"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="NUh-rO-vti">
@@ -449,11 +450,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7c-gd-761" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="1108"/>
+            <point key="canvasLocation" x="1949" y="1139"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="l9l-KP-T0W"/>
+        <segue reference="76a-33-Lsk"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="folder.fill" catalog="system" width="128" height="96"/>

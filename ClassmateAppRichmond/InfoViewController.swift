@@ -9,7 +9,9 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
-    weak var delegate: ViewController?
+    var delegate: ViewController!
+    var delegate2: InfoTableViewController!
+    
     var classmates: [Classmate] = []
     var targetIndex: Int = 0
 
@@ -26,7 +28,13 @@ class InfoViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        delegate!.classmates = classmates
+        if(delegate != nil) {
+            delegate.classmates = classmates
+        } else {
+            delegate2.classmates = classmates
+        }
+        
+
     }
     
     func displayClassmateInfo() {

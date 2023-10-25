@@ -47,6 +47,8 @@ class AddClassmateViewController: UIViewController {
         
         response_label.text = "Add Successful"
         
+        classmates.append(Classmate(name: name!, age: age, uID: uID))
+        
         if delegate1 == nil {
             delegate2.classmates.append(Classmate(name: name!, age: age, uID: uID))
             delegate2.tableView.reloadData()
@@ -79,7 +81,8 @@ class AddClassmateViewController: UIViewController {
         var indexToRemove: Int = -1
         
         // Search array
-        for i in 0...classmates.count {
+        for i in 0..<classmates.count {
+            print("index: \(i)")
             let target = classmates[i]
             if(target.name != name || target.age != age || target.uID != uID) {
                 continue
@@ -89,12 +92,16 @@ class AddClassmateViewController: UIViewController {
             break
         }
         
+        print("index to remove: \(indexToRemove)")
+        
         if(indexToRemove == -1) {
             response_label.text = "Remove Faild (Student does not exist)"
             return
         }
         
         response_label.text = "Remove Successful"
+        
+        classmates.remove(at: indexToRemove)
         
         if delegate1 == nil {
             delegate2.classmates.remove(at: indexToRemove)
